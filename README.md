@@ -1,2 +1,2 @@
 # macos
-My macOS setup for new installations
+My macOS setup for new installations. Currently still untested

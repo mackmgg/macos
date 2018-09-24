@@ -1,0 +1,15 @@
+automake
+cmake
+elinks
+gnupg
+lynx
+minicom
+mtr
+nmap
+p7zip
+pinentry-mac
+qwt
+task
+telnet
+wget
+ykman

@@ -7,7 +7,6 @@ minicom
 mtr
 nmap
 p7zip
-pinentry-mac
 qwt
 task
 telnet

@@ -12,6 +12,5 @@ for rcfile in $(find $HOME/.dotfiles -name '.*' -mindepth 1 | cut -c $(echo "$HO
   ln -s $HOME/.dotfiles/$rcfile $HOME/${rcfile}
 done
 
-# Setup homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install $(cat homebrew.txt)
+# Install stuff
+apt install $(cat homebrew.txt)

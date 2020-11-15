@@ -1,3 +1,7 @@
+# Setup homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install $(cat homebrew.txt)
+
 # Setup shell
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.zprezto"
 setopt EXTENDED_GLOB
@@ -11,7 +15,3 @@ git clone https://github.com/mackmgg/mydotfiles.git "$HOME/.dotfiles"
 for rcfile in $(find $HOME/.dotfiles -name '.*' -mindepth 1 | cut -c $(echo "$HOME/.dotfiles/" | wc -c)-); do
   ln -s $HOME/.dotfiles/$rcfile $HOME/${rcfile}
 done
-
-# Setup homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install $(cat homebrew.txt)

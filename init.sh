@@ -13,5 +13,5 @@ chsh -s /bin/zsh
 # Download dotfiles. This is a terrible kludge right now
 git clone https://github.com/mackmgg/mydotfiles.git "$HOME/.dotfiles"
 for rcfile in $(find $HOME/.dotfiles -name '.*' -mindepth 1 | cut -c $(echo "$HOME/.dotfiles/" | wc -c)-); do
-  ln -s $HOME/.dotfiles/$rcfile $HOME/${rcfile}
+  ln -sf $HOME/.dotfiles/$rcfile $HOME/${rcfile}
 done
